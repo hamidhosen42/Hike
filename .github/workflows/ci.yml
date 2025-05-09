@@ -1,0 +1,37 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode
+      run: sudo xcode-select -s /Applications/Xcode_15.0.app
+
+    - name: Install dependencies (if using CocoaPods)
+      run: |
+        cd Hike
+        pod install || echo "No Podfile"
+
+    - name: Build app
+      run: |
+        xcodebuild clean build \
+        -workspace Hike.xcworkspace \
+        -scheme HikeApp \
+        -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
+
+    - name: Run tests
+      run: |
+        xcodebuild test \
+        -workspace Hike.xcworkspace \
+        -scheme HikeApp \
+        -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
