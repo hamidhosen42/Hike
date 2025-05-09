@@ -2,8 +2,9 @@
 # 🥾 Hike – Explore Beautiful Trails with Friends & Family
 
 <p align="center">
-  <img src="./AppImage/AppIcon.png" alt="App Icon" width="256" height="256"/>
+  <img src="./AppImage/AppIcon.png" alt="App Icon" width="150" height="150" style="border-radius: 16px;" />
 </p>
+
 
 **Hike** is a simple yet elegant hiking companion app built for iOS and iPadOS. Designed to inspire people to explore the outdoors, Hike provides curated trail info, engaging visuals, and personalized features like alternate app icons. Whether you're a weekend adventurer or a family looking for a fun walk, Hike helps you get started.
 
