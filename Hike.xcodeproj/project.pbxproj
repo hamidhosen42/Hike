@@ -45,6 +45,11 @@
 			path = HikeUITests;
 			sourceTree = "<group>";
 		};
+		FB8DFE832DCDAD0F005E21F5 /* AppImage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AppImage;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		FB7717352DC5AABC0090C889 = {
 			isa = PBXGroup;
 			children = (
+				FB8DFE832DCDAD0F005E21F5 /* AppImage */,
 				FB7717402DC5AABC0090C889 /* Hike */,
 				FB7717512DC5AABF0090C889 /* HikeTests */,
 				FB77175B2DC5AABF0090C889 /* HikeUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FB7717402DC5AABC0090C889 /* Hike */,
+				FB8DFE832DCDAD0F005E21F5 /* AppImage */,
 			);
 			name = Hike;
 			packageProductDependencies = (

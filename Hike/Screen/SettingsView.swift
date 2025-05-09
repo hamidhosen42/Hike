@@ -168,7 +168,7 @@ struct SettingsView: View {
                 CustomListRowView(
                     rowLabel: "Website", rowIcon: "globe",
                     rowTintColor: .indigo, rowLinkLabel: "Md.Hamid Hosen",
-                    rowLinkDestination: "https://sites.google.com/view/mdhamidhosen")
+                    rowLinkDestination: "https://sites.google.com/view/mdhamidhosen")#imageLiteral(resourceName: "simulator_screenshot_CED6B5FF-6C71-4E28-83F6-EFF99AE9D9C2.png")
 
             }  //: SECTION
         }  //: LIST
